@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio Checkbox</title>
+  </head>
+  <body>
+    <form action="/signup">
+      <fieldset>
+        <legend>좋아하는 색상을 모두 선택해주세요</legend>
+        <ul>
+          <li>
+            <label for="red">빨강</label>
+            <input type="checkbox" id="red" value="red" />
+          </li>
+          <li>
+            <label for="orange">주황</label>
+            <input type="checkbox" id="orange" value="orange" />
+          </li>
+          <li>
+            <label for="yellow">노랑</label>
+            <input type="checkbox" id="yellow" value="yellow" />
+          </li>
+          <li>
+            <label for="green">초록</label>
+            <input type="checkbox" id="green" value="green" />
+          </li>
+          <li>
+            <label for="blue">파랑</label>
+            <input type="checkbox" id="blue" value="blue" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>배송방법을 선택하세요</legend>
+        <ul>
+          <li>
+            <label for="free">무료</label>
+            <input type="radio" name="delivery" id="free" />
+          </li>
+          <li>
+            <label for="pay">유료</label>
+            <input type="radio" name="delivery" id="pay" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>자기소개서</legend>
+        <textarea name="" id="" cols="30" rows="10">textarea 태그</textarea>
+      </fieldset>
+      <fieldset>
+        <ul>
+          <li>
+            <select name="" id="">
+              <option value="apple_10kg">사과10kg</option>
+              <option value="apple_20kg" selected>사과20kg</option>
+              <option value="apple_30kg">사과30kg</option>
+              <option value="apple_40kg">사과40kg</option>
+            </select>
+          </li>
+          <li>
+            <label for="choice">맛을 선택하세요</label>
+            <input list="flavors" id="choice" name="" />
+            <datalist id="flavors">
+              <option value="초코"></option>
+              <option value="코코넛"></option>
+              <option value="민트"></option>
+              <option value="바닐라"></option>
+              <option value="딸기"></option>
+            </datalist>
+          </li>
+        </ul>
+        <legend>주문 상품을 선택해주세요!</legend>
+      </fieldset>
+      <fieldset>
+        <legend>사이즈를 선택하세요</legend>
+        <select name="" id="" multiple>
+          <option value="S">S</option>
+          <option value="M" selected>M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+        </select>
+      </fieldset>
+      <button type="submit">제출</button>
+      <button type="reset">리셋하기</button>
+      <button type="button" onclick="alert('Hello world~!')">
+        버튼
+        <!--자바스크립트 측 코드 명령-->
+      </button>
+    </form>
+  </body>
+</html>

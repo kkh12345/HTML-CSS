@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>font style 1</title>
+    <style>
+      html {
+        font-family: serif, cursive;
+      }
+      [class='title'] {
+        font-size: 70px;
+      }
+      .content {
+        font-size: 40px;
+      }
+      [class='content two'] + p {
+        font-style: italic;
+      }
+      [class*='five'] {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="title">유튜브</h2>
+    <p class="content">아아아아아어어어어어어</p>
+    <p class="content2">아아아아아어어어어어어</p>
+    <p class="content">아아아아아어어어어어어</p>
+    <p class="content">아아아아아어어어어어어</p>
+    <p class="contentfive">아아아아아어어어어어어</p>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+[class] {
+  border: 50px solid red;
+  width: 200px;
+  padding: 50px;
+  margin: 20px;
+}
+.green {
+  border-color: green;
+  /* visibility: hidden; */
+  /*display:none;*/
+}
+.blue {
+  border-color: blue;
+}
+
+/* display:none : 아예 사라지게 하는것. 보이지도 않고 해당 공간도 존재하지 않게 됨
+visibilty:hidden : 보이지만 않고 해당 공간은 존재. width와 height값을 주었다면 그만큼 공간은 존재하게 됨 */

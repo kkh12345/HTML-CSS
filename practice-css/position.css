@@ -1,0 +1,18 @@
+.box {
+  width: 100px;
+  height: 100px;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.blue {
+  background-color: blue;
+}
+.locate {
+  position: sticky;
+  left: 30px;
+  top: 100px;
+}

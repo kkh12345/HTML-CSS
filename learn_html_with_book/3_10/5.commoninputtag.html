@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>인풋 요소 공통(대부분)속성</h1>
+    <form action="" method="">
+      <label for="value">value</label><br />
+      <input type="text" id="value" value="지정됨" />
+      <br /><br />
+      <label for="auto">autofocus</label><br />
+      <input type="text" id="auto" placeholder="자동 포커스됨" autofocus />
+      <br /><br />
+      <label for="read">readonly</label><br />
+      <input type="text" id="read" value="읽기만 가능, 전송됨" readonly />
+      <br /><br />
+      <label for="disabled">disabled</label><br />
+      <input
+        type="text"
+        id="disabled"
+        placeholder="입력 불가, 전송 안됨"
+        disabled
+      />
+      <br /><br />
+      <label for="required">required</label> <br />
+      <input
+        type="text"
+        id="required"
+        placeholder="필수 입력!"
+        required
+        autocomplete="off"
+      />
+      <br /><br />
+      <input type="radio" id="apple" checked />
+      <label for="apple">사과</label>
+      <input type="radio" id="grape" />
+      <label for="grape">포도</label>
+      <input type="radio" id="orange" />
+      <label for="orange">오렌지</label>
+      <br /><br />
+      <button type="submit">제출</button>
+    </form>
+  </body>
+</html>

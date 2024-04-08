@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>옵션들을 사용하는 태그</h1>
+    <h2>select, option 태그</h2>
+    <label for="lang">언어1</label><br />
+    <select name="" id="lang" multiple>
+      <option value="">--언어 선택--</option>
+      <option value="html">HTML</option>
+      <option value="css ">CSS</option>
+      <option value="js">자바스크립트</option>
+      <option value="ts">타입스크립트</option>
+    </select>
+    <br /><br />
+    <h2>optgroup태그</h2>
+    <label for="shopping">쇼핑 목록</label><br />
+    <select name="" id="shopping">
+      <optgroup label="과일">
+        <option value="f_apl" selected>사과</option>
+        <option value="f_grp ">포도</option>
+        <option value="f_org">오렌지</option>
+      </optgroup>
+
+      <optgroup label="채소">
+        <option value="v_crt">당근</option>
+        <option value="v_tmt ">토마토</option>
+        <option value="v_ept">가지</option>
+      </optgroup>
+
+      <optgroup label="육류">
+        <option value="m_bef">소고기</option>
+        <option value="m_prk ">돼지고기</option>
+        <option value="m_ckn">닭고기</option>
+      </optgroup>
+    </select>
+    <br /><br />
+    <h2>datalist 태그</h2>
+    <label for="job">현재 직업 </label><br />
+    <input list="jobs" id="job" />
+    <datalist id="jobs">
+      <option value="학생"></option>
+      <option value="디자이너"></option>
+      <option value="퍼블리셔"></option>
+      <option value="개발자"></option>
+    </datalist>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+body {
+  color: white;
+  margin: 0;
+}
+
+nav {
+  background-color: black;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-box2-item {
+  padding: 28px 17px;
+  font-weight: 700;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: greenyellow;
+}
+main {
+  height: 969px;
+  background-image: url(https://www-growth.scdn.co/static/home/bursts.svg);
+  background-color: blue;
+  background-size: 175%;
+  background-position: 46% 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-item {
+  font-size: 146px;
+  color: #1ed760;
+  font-weight: 900;
+}
+.main-item2 {
+  color: #1ed760;
+  font-size: 18px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.main-button {
+  padding: 14px 32px;
+  background-color: #1ed760;
+  border-radius: 500px;
+  color: #2941ab;
+  font-weight: 700;
+  border: none;
+}
+.main-button:hover {
+  transform: scale(1.5);
+}
+.button-area {
+  text-align: center;
+}
+.text-position1 {
+  position: relative;
+  left: -1em;
+}
+.text-position2 {
+  position: relative;
+  left: 1.3em;
+}

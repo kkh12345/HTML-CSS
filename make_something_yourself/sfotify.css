@@ -2,7 +2,6 @@ body {
   color: white;
   margin: 0;
 }
-
 nav {
   background-color: black;
   height: 80px;
@@ -10,7 +9,6 @@ nav {
   justify-content: space-around;
   align-items: center;
 }
-
 .nav-box2-item {
   padding: 28px 17px;
   font-weight: 700;
@@ -64,4 +62,71 @@ main {
 .text-position2 {
   position: relative;
   left: 1.3em;
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+footer {
+  height: 530px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.yellow {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  max-width: 1170px;
+}
+.orange1 {
+  display: flex;
+  justify-content: space-between;
+  height: 346px;
+}
+.green > a {
+  padding-right: 15px;
+  color: #919496;
+}
+.orange3 {
+  display: flex;
+  justify-content: space-between;
+}
+.red1 {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+.red-column {
+  display: flex;
+  flex-direction: column;
+}
+.red2 {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+.title {
+  color: #919496;
+  font-weight: 900;
+  margin: 20px 0px;
+}
+.red-column a {
+  padding-bottom: 15px;
+  padding-top: 3px;
+  font-size: 16px;
+}
+.orange2 {
+  display: flex;
+  justify-content: flex-end;
+}
+.green2 {
+  color: #919496;
+}
+.orange2 > div {
+  color: #919496;
+  margin: 10px 0px;
 }

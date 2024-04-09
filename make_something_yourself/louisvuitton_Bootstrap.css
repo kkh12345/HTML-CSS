@@ -1,0 +1,25 @@
+.btn-outline-success {
+  color: chocolate;
+  border-color: chocolate;
+}
+
+.btn-outline-success:hover {
+  color: white;
+  background-color: chocolate;
+  border: 0px;
+}
+.btn-style {
+  color: #fff;
+  background-color: #212529;
+  border-color: #212529;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  transition: color 0.15s;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+}

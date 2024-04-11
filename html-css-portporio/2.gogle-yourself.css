@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: arial, sans-serif;
+  color: rgb(100, 95, 95);
+}
+nav a {
+  text-decoration: none;
+  color: rgb(100, 95, 95);
+  padding-right: 30px;
+}
+nav {
+  margin: 20px;
+  text-align: end;
+}
+main {
+  text-align: center;
+  margin-top: 100px;
+}
+main > img {
+  margin-top: 100px;
+}
+input {
+  width: 550px;
+  height: 35px;
+  border-radius: 20px;
+  padding: 0px 35px;
+  border: 1px solid rgba(16, 16, 16, 0.247);
+}
+.container {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.search-icon {
+  position: relative;
+  left: 35px;
+}
+.mic-icon {
+  position: relative;
+  right: 35px;
+}
+.button-area {
+  margin: 20px 0;
+}
+button {
+  padding: 7px 20px;
+  margin: 0 10px;
+  border: 1px solid rgb(216, 207, 207);
+  border-radius: 5px;
+  color: rgb(87, 83, 83);
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.offer-style {
+  text-decoration: none;
+  color: blue;
+  padding-right: 5px;
+}
+footer {
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+footer > div {
+  height: 100%;
+}
+
+.first-line {
+  border-bottom: 1px solid rgb(232, 228, 228);
+  padding: 15px 20px;
+  color: rgb(100, 95, 95);
+}
+.second-line {
+  padding: 15px 20px;
+}
+.second-line a {
+  text-decoration: none;
+  color: rgb(100, 95, 95);
+  padding-right: 15px;
+}
+.span {
+  float: right;
+}
+.footer-box {
+  display: flex;
+}
+.padding-bottom {
+  padding-bottom: 20px;
+}

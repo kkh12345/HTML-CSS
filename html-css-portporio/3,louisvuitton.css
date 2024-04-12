@@ -1,0 +1,56 @@
+.btn-outline-success {
+  border: 1px solid chocolate;
+  color: chocolate;
+}
+.btn-outline-success:hover {
+  background-color: chocolate;
+}
+.container {
+  text-align: center;
+}
+h2 {
+  margin-top: 50px;
+}
+#Discover {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-bottom: 50px;
+}
+#Discover:hover {
+  transform: scale(1.1);
+}
+p.card-text {
+  font-size: 2em;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+footer {
+  background-color: black;
+  color: white;
+}
+.first-line {
+  text-align: left;
+
+  border-bottom: 1px solid rgb(127, 90, 5);
+}
+.second-line a {
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 440px) {
+  .second-line {
+    text-align: center;
+  }
+  .first-line {
+    text-align: center;
+  }
+
+  .row a,
+  .row span {
+    display: inline-block;
+    padding-bottom: 2rem;
+  }
+}

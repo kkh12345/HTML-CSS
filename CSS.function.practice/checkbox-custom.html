@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkbox Custom</title>
+    <style>
+      .custom-area {
+        width: 50vw;
+        background-color: beige;
+        margin-top: 50px;
+      }
+
+      input#chkbox2 {
+        display: none;
+      }
+
+      input#chkbox2 + label > em {
+        display: inline-block;
+        width: 19px;
+        height: 22px;
+        margin-right: 5px;
+        background: url(./formimg_radio_check.gif) no-repeat 0 0;
+        vertical-align: middle;
+
+        /* vertical-align 속성 : https://nossodia.tistory.com/56 */
+      }
+
+      input#chkbox2:checked + label > em {
+        background-position: 0 -114px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>input과 label을 연결할 때</h1>
+
+    <h3>input 태그 id를 사용하고 싶지 않을 때</h3>
+    <label>
+      <input type="checkbox" />
+      안녕(글자 눌러도 체크 됨)
+    </label>
+
+    <h3>input 태그 id를 사용할 때</h3>
+
+    <input type="checkbox" id="chkbox" />
+    <label for="chkbox">체크하세요(글자 눌러도 체크 됨)</label>
+
+    <h1>input과 label을 분리할 때</h1>
+    <input type="checkbox" />
+    <label>체크하세요(글자 누르면 체크 안됨)</label>
+
+    <div class="custom-area">
+      <input type="checkbox" id="chkbox2" />
+      <label for="chkbox2"><em></em>checkbox custom</label>
+    </div>
+  </body>
+</html>

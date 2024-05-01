@@ -1,0 +1,32 @@
+.profile {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.title {
+  font-size: 150%;
+  font-family: gulim;
+  color: red;
+  letter-spacing: 5px;
+  text-align: center;
+}
+#ptag {
+  text-align: center;
+  font-weight: 600;
+  font-size: 120;
+}
+.paragrah {
+  line-height: 1.5em;
+  text-align: center;
+  background-color: lightblue;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px 0 black;
+}
+/* 스타일이 겹칠 경우 */
+/* 우선순위: html에 직접 지정>id>class>tag */
+/* display:block:가로 행을 전부 차지하게 해주셈 */
+/* text-align, font size, color, font-family 등 같은 스타일은 부모태그에 줘도 자식들까지 상속(inherit ), 글자와 관련된 스타일들이 주로 inherit 됨. */

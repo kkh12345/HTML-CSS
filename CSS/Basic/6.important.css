@@ -5,6 +5,7 @@
 .header {
   width: 100%;
   /* 내 부모 요소 width의 100% */
+
   height: 50px;
   background-color: aqua;
 }
@@ -14,6 +15,7 @@
   background-color: cornflowerblue;
   float: left;
   /* 이 요소를  붕 띄워서 왼쪽정렬, */
+
   /* block element에만 적용 가능 ,inline element에 쓰면inline-block으로 바뀜 */
 }
 .right {
@@ -29,8 +31,10 @@
   clear: both;
   float: none;
   /* float 속성 다음에 뭔가를 배치하고싶을떄 */
+
   /* clear속성은 다음에 오는 요소가 float영향을 받지 않게 해준다. block 요소에만 적용 가능하다 버그가 생기지 않게 float:none도 추가해주는것이 좋다
   예) float:left 는 clear:left로 해결 */
+
   /* float: none; : block기본 속성 유지(기본값) */
 }
 /* float 프로퍼티는 해당 요소를 다음 요소 위에 떠 있게 한다. 여기서 떠 있다(float)는 의미는 요소가 기본 레이아웃 흐름에서 벗어나 요소의 모서리가 페이지의 왼쪽이나 오른쪽에 이동하는 것이다. 그래서 보통 레이아웃을 구성할 때 요소를 가로 정렬하기 위해 사용되는 기법이다. 예를 들어, 문서에 사진과 그림이 있을 때, 그림을 왼쪽이나 오른쪽으로 띄워서 정렬 하거나 각 객체를 오른쪽이나 왼쪽으로 정렬하여 전체 문서를 배치(layout)할 때도 사용할 수 있다 */

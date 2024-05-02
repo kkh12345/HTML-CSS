@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+}
+
+.main-background {
+  width: 100%;
+  height: 500px;
+  background-image: url(../../img/shoes.jpg);
+
+  /* url을 여러개 쓰면 배경을 겹칠 수 있다. */
+
+  border: 1px solid black;
+  background-size: cover;
+
+  /* contain:배경이 짤리지 않게 꽉채워주세요, cover: 배경이 짤리더라도 꽉 채움 */
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* 배경을 가운데부터 채워라 */
+  /* background-attachment는 웹사이트가 스크롤될 때 배경이 신기하게 동작하게 만들고 싶으면 써보도록 합시다.  */
+
+  /* filter: brightness(70%); */
+  /* 배경 보정 (근데 안에 글씨가 있으면 글씨에도 필터입혀짐)*/
+  /* 사진이나 배경 단독으로 넣고싶을때만 사용 */
+
+  /* .main-background {
+    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url(이미지경로~~) ;
+   
+  } */
+
+  /* overlay속성도 검색해볼 것 */
+
+  /* linear-gradient 이건 색이 점진적으로 변하는 gradient를 줄 수 있는 키워드인데 여기에 투명도 0.5의 검은색을 입힌 후에 배경겹치기 스킬을 사용하면 됩니다. */
+
+  text-align: center;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.main-title {
+  color: #eee;
+  font-size: 40px;
+  margin-bottom: 100px;
+}
+
+/* 박스 2개가 테두리가 겹치면 margin을 주면 2개가 1. 마진을 하나로 합쳐주고 2. 혹여나 둘 다 마진이 있으면 둘 중에 더 큰 마진을 하나만 적용하게 됩니다 . 근데 난 이런현상이 안 생기는데?뭐지 아 main-background에 border 1px을 줘서 테두리가 안 겹쳐서 안생기는구나*/
+
+/* margin collapse해결방법:부모요소에 padding을 조금 준다 */
+
+.main-background p {
+  color: white;
+}
+
+.main-background button {
+  font-size: 1rem;
+  color: gray;
+  padding: 15px;
+  border: none;
+  background: white;
+  position: relative;
+  top: 100px;
+  letter-spacing: 2px;
+  /* z-index: 2; */
+  /* 요소의 앞뒤 결정.값이 높을수록 앞에 옴 */
+}
+
+/* position속성 부여하면
+1.좌표이동가능
+2.공중에뜸 */
+
+/* position : static; 기준이 엄서요 (좌표적용 불가)
+  position : relative; 기준이 내 원래 위치요
+  position : absolute; 기준이 내 부모들중 relative를 가진 요소
+  position : fixed; 기준이 브라우저 창이요 (viewport) */
+
+/* 적어도 5개의 속성이 있어야 가운데 정렬이 가능합니다. 
+  5개라니 약간 귀찮아집니다.
+  position : absolute; 
+  left : 0;
+  right : 0; 
+  margin-left : auto;
+  margin-right : auto;
+  width : 적절히 */
+
+.position-box {
+  background-color: lightgray;
+  text-align: center;
+
+  width: 70%;
+  max-width: 600px;
+
+  /* width %의 문제는 PC사이즈에서 너무 큼
+max-width와 함께 쓰셈 반응형 레이아웃 만들 떄 유용 */
+
+  margin: 0 auto;
+  position: relative;
+  top: -40px;
+
+  box-sizing: border-box;
+}
+
+.position-box h2 {
+  padding-bottom: 20px;
+}

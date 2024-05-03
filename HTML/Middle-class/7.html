@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .component div {
+        float: left;
+      }
+      .component div:nth-child(2),
+      .component div:nth-child(3) {
+        float: right;
+        margin-left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>ie옛버전에서 호환성 챙기기</h4>
+    <p>
+      <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="css/ie8.css" /> <!
+      [endif]-->head태그안에 입력하셈
+    </p>
+
+    <div class="component">
+      <div>shop</div>
+      <div>product</div>
+      <div>services</div>
+    </div>
+    <div style="clear: both"></div>
+  </body>
+</html>

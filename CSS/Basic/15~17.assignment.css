@@ -1,0 +1,115 @@
+.lightblue {
+  color: lightblue;
+  font-weight: 600;
+}
+
+.navy {
+  color: navy;
+  font-weight: 600;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+th,
+td {
+  border-bottom: 1px solid lightblue;
+  padding: 20px;
+  text-align: end;
+}
+
+.container {
+  background-color: lightblue;
+  padding: 30px;
+  width: 100%;
+}
+
+.big-box {
+  width: 70%;
+  max-width: 1000px;
+
+  margin: 0 auto;
+}
+
+.big-box h1 {
+  font-weight: 300;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+  border-radius: 7px;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px none;
+}
+
+/* table {
+  border-collapse : collapse;
+  border-radius : 7px;
+  border-style : hidden;
+  box-shadow : 0 0 0 1px #666;
+}
+box-shadow라는 속성을 이용해 테두리를 가짜로 만들어내는 편법입니다.
+box-shadow는 그림자 넣는 속성입니다.  */
+
+/* border:hidden
+none 키워드와 마찬가지로 테두리를 표시하지 않습니다. Unless a background-image를 지정하지 않았으면 해당 면의 border-width 계산값은 지정값을 무시하고 0이 됩니다. 표에서, 칸의 테두리 상쇄 시 hidden은 제일 높은 우선순위를 가집니다. 따라서 주변 칸이 테두리를 가지더라도 그리지 않습니다. */
+
+/* border-spacing 속성은 표의 테두리 간격을 설정합니다. */
+
+th {
+  letter-spacing: 2px;
+  font-size: 13px;
+  color: lightblue;
+}
+
+table img {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+td[colspan='5'] {
+  font-size: 1.5rem;
+}
+
+.bottom-area {
+  width: 100%;
+}
+.bottom-area a {
+  float: left;
+}
+.bottom-area button {
+  float: right;
+  padding: 20px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* .cart-table td:nth-child(3n+0) {
+  color: red;
+} 
+이러면 3의 배수로 등장하는 3,6,9,12.. 번째 등장하는 요소에만 스타일을 줄 수 있습니다.
+
+3n + 1 이렇게 작성하면 (3의배수 +1) 번째 등장하는 요소에만 스타일을 줄 수 있습니다.  */
+
+/* .cart-table td:nth-child(even) {
+  color: red;
+} 
+이러면 짝수로 등장하는 td에만 스타일을 줄 수도 있고
+
+(odd라고 쓰면 홀수입니다) */
+
+/* 하나의 td에 width를 주어도 전체 열의 width가 변합니다.
+
+나름 편리한 점이라고 볼 수 있겠습니다. */
+
+/* colspan에 원하는 숫자를 넣으면 그 숫자만큼 옆의 셀을 합쳐줍니다.  */

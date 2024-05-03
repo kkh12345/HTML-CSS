@@ -3,6 +3,9 @@ input {
   box-sizing: border-box;
   padding: 10px;
 }
+div {
+  box-sizing: border-box;
+}
 
 textarea {
   width: 100%;
@@ -55,4 +58,5 @@ input[type='checkbox'] {
   border: none;
   color: white;
   padding: 10px 15px;
+  cursor: pointer;
 }

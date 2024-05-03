@@ -1,0 +1,53 @@
+button {
+  cursor: pointer;
+}
+
+button:focus {
+  background-color: gray;
+}
+
+input:focus {
+  border: 3px solid red;
+}
+
+input:valid {
+  color: aqua;
+}
+/* :valid 이메일 input 등에 이메일 형식이 맞을 경우 */
+
+input:invalid {
+  color: orange;
+}
+/* :invalid 이메일 input 등에 이메일 형식이 맞지 않을 경우 */
+
+a:link {
+  color: aquamarine;
+}
+
+a:visited {
+  color: green;
+}
+
+/* pseudo 링크
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes */
+
+/* pseudo-class 셀렉터를 붙이시면 여러 상태에 따른 스타일을 지정해줄 수 있습니다.
+
+hover, focus, active 스타일 넣을 때 순서는 꼭 이렇게 선언해야 잘 동작합니다.
+
+1. hover 
+
+2. focus 클릭 후 계속 포커스 상태일 때
+
+3. active 
+
+입니다. hofa로 외우면 잘외워지겠군요 
+
+이거 말고도 수많은 pseudo-class가 있기 때문에 필요하면 찾아쓰도록 합시다. */
+
+/* 이렇게 링크의 스타일을 정의하는 link, visited, hover, active 클래스를 사용할 때는 
+작성 순서에 주의해야 합니다.
+a:hover는 a:link, a:visited 뒤에 와야 합니다.
+a:active는 a:hover 뒤에 와야 합니다.
+정리하면
+a:link, a:visited, a:hover, a:active  순서로 배치해야 합니다. */

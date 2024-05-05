@@ -1,0 +1,29 @@
+h1,
+p,
+body {
+  margin: 0;
+}
+div {
+  box-sizing: border-box;
+}
+.bg-white {
+  background-color: white;
+}
+.font-blue {
+  color: #6fbaf8;
+}
+.btn-blue {
+  border: none;
+  color: white;
+  background-color: #6fbaf8;
+  border-radius: 5px;
+}
+
+.gray-area {
+  background-color: #f7f9fc;
+}
+
+.profile-img,
+.profile-first-content {
+  float: left;
+}

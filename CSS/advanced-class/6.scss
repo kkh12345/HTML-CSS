@@ -1,0 +1,71 @@
+ul {
+  border-collapse: collapse;
+  > li {
+    border: 1px solid #eee;
+    padding: 10px;
+    width: 20%;
+    list-style: none;
+
+    &:hover {
+      background-color: blue;
+      color: white;
+    }
+  }
+}
+
+@mixin 박스배경($배경색, $구멍) {
+  background-color: $배경색;
+  padding: 10px;
+  margin: 10px 0;
+  width: 50%;
+  box-sizing: border-box;
+  &:before {
+    content: $구멍;
+    font-weight: bold;
+  }
+  p {
+    display: inline-block;
+    margin: 0;
+  }
+}
+.box1 {
+  @include 박스배경(yellow, 'Well done!');
+}
+.box2 {
+  @include 박스배경(aqua, 'Heads Up!');
+}
+.box3 {
+  @include 박스배경(greenyellow, 'Warning!');
+}
+
+@mixin 너비($숫자) {
+  width: $숫자;
+}
+$경계: 1px solid black;
+
+%분할 {
+  padding: 5px;
+  border: $경계;
+}
+
+.row {
+  display: flex;
+  @include 너비(100%);
+  border: $경계;
+  background-color: aquamarine;
+  border-collapse: collapse;
+  margin: 20px 0;
+
+  .col-6 {
+    @include 너비(50%);
+    @extend %분할;
+  }
+  .col-4 {
+    @include 너비(100%/3);
+    @extend %분할;
+  }
+  .col-3 {
+    @include 너비(25%);
+    @extend %분할;
+  }
+}

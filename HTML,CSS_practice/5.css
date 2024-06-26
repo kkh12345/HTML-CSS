@@ -1,0 +1,147 @@
+div {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.color-white {
+  color: white;
+}
+.text-center {
+  text-align: center;
+}
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.component1 {
+  background: linear-gradient(rgb(87, 150, 213), 70%, rgb(31, 70, 117));
+  padding: 50px 10%;
+  position: relative;
+  height: 500px;
+  color: white;
+}
+.component1__content {
+  width: 50%;
+}
+.component1 > img {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+.component1__content > button {
+  background-color: #333;
+}
+/* -------------------------------- */
+.component2 {
+  width: 100%;
+  margin-top: 50px;
+}
+.component2__content {
+  width: 70%;
+  margin: 0 auto;
+}
+.component2__content button {
+  background-color: #333;
+}
+.component3 {
+  background-color: rgb(63, 102, 156);
+  margin-top: 50px;
+}
+.component3__center {
+  width: 70%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.component3__center > h3 {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.component3__flex {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.component3__flex i {
+  background-color: white;
+  color: rgb(63, 102, 156);
+  padding: 30px 33px;
+  border-radius: 50%;
+  font-size: 30px;
+}
+.component4 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.component4 h3 {
+  margin-top: 0;
+}
+.component4__flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+.component4__img {
+  width: 50%;
+}
+.component4__img > img {
+  width: 100%;
+  display: block;
+}
+.component5 {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.component5 i {
+  padding: 30px 33px;
+  border-radius: 50%;
+  font-size: 30px;
+  background-color: rgb(63, 102, 156);
+  margin: 0 20px;
+}
+.component5 p {
+  color: black;
+  margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  .component1 {
+    height: auto;
+    padding: 0;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .component1__content {
+    width: 100%;
+  }
+  .component1 > img {
+    position: static;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .component3__flex {
+    display: block;
+  }
+  .component3__flex > div {
+    margin-bottom: 50px;
+  }
+  .component4__flex {
+    display: block;
+  }
+  .component4__img {
+    width: 100%;
+  }
+  .component5 i {
+    margin: 20px;
+  }
+}

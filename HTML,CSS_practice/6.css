@@ -1,0 +1,201 @@
+html {
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  background-color: #eee;
+}
+div {
+  box-sizing: border-box;
+}
+.color--blue {
+  color: #6fbaf8;
+}
+.bg--white {
+  background-color: white;
+}
+.profile::after,
+.profile-left::after,
+.thrid-people::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+  padding: 50px 0;
+}
+.profile {
+  padding: 50px;
+}
+.profile--flesh {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.profile-left,
+.profile-right {
+  float: left;
+  width: 50%;
+}
+.profile-left--flesh {
+  border-right: 1px solid #ccc;
+}
+.profile-left-content {
+  float: left;
+  margin-left: 20px;
+}
+.profile-left > img {
+  display: block;
+  float: left;
+  width: 200px;
+}
+.profile-left-content > h1 {
+  margin: 0;
+}
+.profile-left-content > p:nth-child(2) {
+  margin-top: 5px;
+}
+.btn {
+  padding: 10px 20px;
+}
+.btn--blue {
+  color: white;
+  background-color: #6fbaf8;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.profile-right {
+  display: flex;
+  justify-content: space-evenly;
+}
+.profile-right-en > div,
+.profile-right-ko > div {
+  margin: 20px 0;
+}
+.line {
+  position: relative;
+}
+.line > h1 {
+  font-weight: 500;
+  width: 120px;
+  text-align: center;
+}
+.line--blue {
+  background-color: #6fbaf8;
+  border-radius: 25px;
+  height: 3px;
+  width: 120px;
+  position: absolute;
+  z-index: 1;
+  bottom: -20px;
+}
+.line--gray {
+  background-color: grey;
+  border-radius: 25px;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+}
+.main {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.main > * {
+  padding: 30px;
+  border-radius: 10px;
+}
+.main-first {
+  width: 25%;
+}
+.main-first p {
+  margin-bottom: 50px;
+}
+.main-second {
+  width: 50%;
+}
+.second-about {
+  padding-bottom: 50px;
+  border-bottom: 1px solid gray;
+}
+.second-skills {
+  padding-bottom: 50px;
+}
+.btn--skills {
+  border-radius: 25px;
+  border: 2px solid gray;
+  background-color: #fff;
+  margin-right: 10px;
+}
+.main-thrid {
+  width: 25%;
+  padding: 0;
+}
+.thrid-signup {
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+}
+.thrid-signup > i {
+  font-size: 100px;
+}
+.thrid-signup > p {
+  margin-top: 25px;
+}
+.thrid-know {
+  width: 100%;
+  padding: 10px;
+}
+.thrid-know > h3 {
+  font-weight: 500;
+  padding: 10px 0;
+  border-bottom: 1px solid gray;
+}
+
+.thrid-people > * {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.thrid-people-content > * {
+  margin: 5px 0;
+  margin-left: 10px;
+}
+.thrid-people > img {
+  display: block;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-left,
+  .profile-right {
+    float: none;
+    width: 100%;
+  }
+  .profile-left--flesh {
+    border-right: none;
+  }
+  .profile-right {
+    margin-top: 30px;
+
+    justify-content: flex-start;
+  }
+  .profile-right-en {
+    width: 200px;
+  }
+  .main {
+    display: block;
+  }
+  .main > * {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

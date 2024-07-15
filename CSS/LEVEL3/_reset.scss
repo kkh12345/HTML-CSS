@@ -1,9 +1,0 @@
-h1 {
-  font-size: 30px;
-}
-$메인칼라: brown;
-@mixin 호버() {
-  &:hover {
-    background-color: aqua;
-  }
-}

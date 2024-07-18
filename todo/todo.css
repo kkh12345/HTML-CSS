@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+}
+div,
+ul,
+li {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+button {
+  cursor: pointer;
+}
+.root {
+  display: flex;
+  justify-content: center;
+}
+.todo_container {
+  width: 600px;
+  height: 100vh;
+  background-color: #e5c62b;
+  padding: 0 30px;
+}
+.todo_tit,
+.todo_input-wrap,
+.todo_register-btnWrap {
+  text-align: center;
+}
+
+.todo_tit {
+  font-size: 50px;
+}
+
+.todo_input-wrap > input {
+  width: 300px;
+  padding: 10px 1rem;
+  font-size: 16px;
+  border: 2px solid #929692;
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+}
+.todo_register-btnWrap > button {
+  width: 300px;
+  border: none;
+  background-color: #779abc;
+  font-size: 16px;
+  padding: 8px 0;
+  color: #eee;
+}
+
+.todo_main {
+  margin-top: 30px;
+}
+.todo_li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+  background-color: #7799bc73;
+  margin-bottom: 5px;
+}
+.todo_li-txt {
+  width: 80%;
+  font-size: 18px;
+  padding: 15px;
+}
+.todo_li-btnGroup {
+  width: 20%;
+  display: flex;
+}
+.todo_li-btnGroup > button {
+  display: block;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: white;
+}
+.todo_modify-btn {
+  background-color: #72ab728f;
+}
+.todo_modify-btn:hover {
+  background-color: #72ab72c9;
+}
+.todo_delete-btn {
+  background-color: #b16464b7;
+}
+.todo_delete-btn:hover {
+  background-color: #b16464e0;
+}

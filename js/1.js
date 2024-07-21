@@ -61,3 +61,41 @@
 //     return full;
 //   },
 // };
+let promise = new Promise(function (resolve, reject) {
+  document.querySelector('#test').addEventListener('load', function () {
+    resolve('성공');
+  });
+  document.querySelector('#test').addEventListener('error', function () {
+    reject('실패');
+  });
+});
+
+promise
+  .then((a) => {
+    console.log(a);
+  })
+  .catch((b) => {
+    console.log(b);
+  });
+
+let 인삿말1 = new Promise(function (resolve, reject) {
+  $.get('https://codingapple1.github.io/hello.txt').done(function (data) {
+    resolve();
+  });
+});
+
+인삿말1
+  .then(() => {
+    let 인삿말2 = new Promise((resolve, reject) => {
+      $.ajax({
+        type: 'GET',
+        url: 'https://codingapple1.github.io/hello.txt',
+      }).done((b) => {
+        resolve(b);
+      });
+    });
+    return 인삿말2;
+  })
+  .then((data) => {
+    console.log(data);
+  });

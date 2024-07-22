@@ -62,3 +62,6 @@ ul {
   text-align: center;
   margin: 10px 0;
 }
+.checked {
+  text-decoration: line-through;
+}

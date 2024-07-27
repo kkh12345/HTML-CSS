@@ -11,20 +11,51 @@ ul {
   list-style: none;
   padding: 0;
 }
+.warn {
+  color: red;
+  font-size: 12px;
+  text-align: center;
+  margin: 10px 0;
+}
+.line_through {
+  text-decoration: line-through;
+}
+.checked_background {
+  background-color: #a6962a33;
+}
+/* ///////////////////////////////////////////////// */
 .root {
   display: flex;
   justify-content: center;
-
   height: 100vh;
+  padding: 30px 0;
+  background-color: rgba(0, 0, 0, 0.176);
 }
+
 .todo_container {
   width: 600px;
   height: 100%;
-  background-color: antiquewhite;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+.todo_container {
+  background-color: #eee;
+  overflow-y: scroll;
+}
+.todo_container::-webkit-scrollbar {
+  background-color: #ddd;
+}
+.todo_container::-webkit-scrollbar-thumb {
+  width: 10px;
+  appearance: none;
+  background-color: #ccc;
 }
 .todo_tit {
+  margin-top: 0;
   text-align: center;
   font-size: 36px;
+  letter-spacing: 5px;
 }
 .register_wrap {
   display: flex;
@@ -32,36 +63,75 @@ ul {
 .register_btn {
   padding: 10px 15px;
   font-size: 20px;
+  background-color: #e4b20f;
+  color: white;
+  border: 1px solid gray;
 }
 .register_input {
   flex-grow: 1;
   padding: 0 10px;
   font-size: 18px;
   outline: none;
+  border: 1px solid gray;
+}
+.tap_btn_wrap {
+  display: flex;
+  margin: 20px 0 5px;
+  padding-left: 10px;
+}
+.tap_btn_wrap > button {
+  border: none;
+  font-size: 16px;
+  padding: 0;
+}
+.tap_btn_wrap > button:hover {
+  color: red;
+}
+.tap_btn_wrap > button:not(:last-child)::after {
+  content: '|';
+  display: inline-block;
+  padding: 0 10px;
+  vertical-align: text-bottom;
+  color: grey;
+}
+
+.todo_ul {
+  margin: 0;
 }
 .todo_li {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
 }
+
 .todo_li_txt {
   width: 80%;
+  padding: 10px 15px;
 }
 .todo_li_btnWrap {
   display: flex;
   width: 20%;
 }
+
 .todo_li_btnWrap > button {
   width: 50%;
-  padding: 10px 0;
+  background: transparent;
   font-size: 16px;
+  border: none;
 }
-.warn {
+
+.check_btn {
+  color: green;
+}
+.check_btn:hover {
+  background-color: rgba(18, 156, 18, 0.454);
+}
+
+.delete_btn {
   color: red;
-  font-size: 13px;
-  text-align: center;
-  margin: 10px 0;
+  font-size: 20px;
 }
-.checked {
-  text-decoration: line-through;
+.delete_btn:hover {
+  background-color: rgba(236, 43, 43, 0.372);
 }

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .center {
+      display: flex;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: #ccc;
+      border: 1px solid white;
+      position: relative;
+    }
+    .four {
+      position: relative;
+    }
+    .three,
+    .five {
+      position: absolute;
+      top: 0;
+    }
+    .three {
+      transform: translateY(-100%);
+    }
+    .five {
+      transform: translateY(100%);
+    }
+    .dot {
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      border-radius: 50%;
+      position: absolute;
+    }
+    .one > .dot,
+    .three > .dot:nth-child(2),
+    .five > .dot:nth-child(5) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .two > .dot:first-child,
+    .six > .dot:nth-child(3) {
+      left: 20%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .two > .dot:last-child,
+    .six > .dot:nth-child(4) {
+      right: 20%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .four > .dot:nth-child(1),
+    .five > .dot:nth-child(1),
+    .six > .dot:nth-child(1),
+    .three > .dot:nth-child(1) {
+      top: 20%;
+      left: 20%;
+    }
+    .four > .dot:nth-child(2),
+    .five > .dot:nth-child(2),
+    .six > .dot:nth-child(2) {
+      top: 20%;
+      right: 20%;
+    }
+    .four > .dot:nth-child(3),
+    .five > .dot:nth-child(3),
+    .six > .dot:nth-child(5) {
+      bottom: 20%;
+      left: 20%;
+    }
+    .four > .dot:nth-child(4),
+    .five > .dot:nth-child(4),
+    .six > .dot:nth-child(6),
+    .three > .dot:nth-child(3) {
+      bottom: 20%;
+      right: 20%;
+    }
+  </style>
+  <body>
+    <div class="center">
+      <div class="box one">
+        <div class="dot"></div>
+      </div>
+      <div class="box two">
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="box four">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="box three">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="box five">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+      <div class="box six">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+  </body>
+</html>
